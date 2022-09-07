@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon-16x16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input_box">
+            <h1 class="text-center">
+                Age Calculator
+            </h1>
+            <div class="text-center">
+                <label for="birth_day">
+                    Date of birth : <input type="date" id="date_of_birth" />
+                </label>
+                <label for="given_date">
+                    Given Date : <input type="date" id="given_date" />
+                </label>
+            </div>
+            <button id="btn" onclick="calculateAge()" >Calculate</button>
+            <h2 class="text-center" id="msg" style="display: none;">Your age is</h2>
+            <div id="output_box" style="display: none;">
+                <span id="years"></span>
+                <span id="months"></span>
+                <span id="days"></span>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

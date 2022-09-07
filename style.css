@@ -1,0 +1,105 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(40,208,43);
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
+
+div.container{
+    /* border: 2px solid black; */
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    background: white;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+div.input_box{
+    padding: 3rem 2.5rem; 
+}
+
+input{
+height: 40px;
+padding: 5px;
+margin: 0px 0px 10px 0px;
+}
+
+input,button,label{
+font-size: 1.8rem;
+/* font-weight: 700; */
+} 
+
+button {
+    width: 100%; 
+    margin: 20px 0px 10px 0px;
+    height: 40px;
+    background-color: skyblue ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+button:hover{
+    background-color: black;
+    color: skyblue;
+}
+
+h1{
+    padding-bottom: 40px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: skyblue;
+    text-decoration: underline;
+}
+#msg{
+    color: skyblue;
+    font-weight: bold;
+}
+#output_box{
+    width: 100%;
+    justify-content: space-between;
+}
+#output_box > span{
+    background-color: skyblue;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+ }
+ @media only screen and (max-width:768px){
+     
+div.container{
+    width: auto;   
+}
+ /* #output_box{
+    width: 100%;
+    justify-content: space-between;
+} */
+
+#output_box > span{
+    background-color: skyblue;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+ }
+ }
